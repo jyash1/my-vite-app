@@ -4,12 +4,11 @@ import { API_END_POINT } from "../../../axios/api";
 
 const initialState = {
   loading: false,
-  userRole: null,
 };
 
 export const login = createAsyncThunk(
   "auth/register",
-  async (params, { rejectWithValue }) => { 
+  async (params, { rejectWithValue }) => {
     try {
       return await instance.post(API_END_POINT.USER_LOGIN, params);
     } catch (err) {
@@ -28,10 +27,10 @@ const authSlice = createSlice({
         state.loading = true;
         state.isLoggedIn = false;
       })
-      .addCase(login.fulfilled, (state, action) => {
+      .addCase(login.fulfilled, (state,action) => {
+        console.log('action',action);
         state.loading = false;
         state.isLoggedIn = true;
-        state.userRole = action.payload.data.user_role;
       })
       .addCase(login.rejected, (state) => {
         state.loading = false;

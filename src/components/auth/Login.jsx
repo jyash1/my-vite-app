@@ -30,18 +30,17 @@ export const Login = () => {
     }),
 
     onSubmit: (data) => {
+      data['user_role'] = 1 
       dispatch(login(data))
         .unwrap()
         .then((responce) => {
-          if (responce.success) {
-            console.log("Login successfull", responce);
+          if (responce) {
+            console.log("Success", responce);
             toast.success("Login successful");
-            navigation
           }
         });
     },
   });
-
   const handleSubmit = (values, { resetForm, setSubmitting }) => {
     console.log("handleSubmit", values);
     login(values, resetForm);
