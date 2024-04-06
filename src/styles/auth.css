@@ -1,0 +1,88 @@
+@import "./index.css";
+
+.auth_panel {
+  display: flex;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.auth_panel::after {
+  position: absolute;
+  content: "";
+  z-index: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    28deg,
+    rgba(40, 42, 55, 0.8267507686668417) 41%,
+    rgba(40, 42, 55, 0.3113446062018558) 98%
+  );
+}
+.auth_panel .log_img {
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
+
+.auth_panel .form_wrapper {
+  position: relative;
+  z-index: 3;
+}
+.auth_panel .form-control {
+  background: #323645;
+  color: var(--white);
+  border-color: transparent;
+  height: 45px;
+  transition: all 0.2s;
+}
+
+.auth_panel .form-control::placeholder {
+  color: var(--grey-500);
+}
+.auth_panel .form-control:focus,
+.auth_panel .form-control:hover {
+  color: var(--white);
+  background: #323645;
+  box-shadow: none;
+  border: 1px solid var(--secondary);
+  transition: all 0.2s;
+}
+
+.auth_panel .icon_input_wrapper {
+  position: relative;
+}
+.auth_panel .icon_input_wrapper svg {
+  position: absolute;
+  left: 1%;
+  top: 50%;
+  transform: translate(-1%, -50%);
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.auth_panel .form-control.icon_input {
+  padding-left: 2rem;
+}
+
+.mail_verify_wrapper {
+  background: rgba(77, 82, 99, 0.79);
+  border-radius: 10px;
+  padding: 1rem;
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  z-index: 3;
+  margin: 1rem;
+}
+
+.mail_verify_wrapper .content,
+.mail_verify_wrapper .content p {
+  text-align: center;
+  color: var(--white);
+}
+.mail_verify_wrapper .close_icon_wraper svg {
+  font-size: 1.5rem;
+}

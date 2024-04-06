@@ -1,0 +1,269 @@
+.common-title {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.font-map .click {
+  font-size: 30px;
+  color: #000;
+  width: 100%;
+  display: block;
+  text-align: right;
+}
+
+.font-map .modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.font-map .modal-header h5 {
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.jacky {
+  width: 50%;
+}
+
+.font-map .click svg {
+  cursor: pointer;
+}
+
+.font-map .modal-body {
+  padding-top: 0px;
+}
+
+.font-map .modal-header {
+  border-bottom: none;
+}
+
+.font-map .now {
+  display: flex;
+  align-items: center;
+}
+
+.font-map .now label {
+  width: 50%;
+  font-size: 15px;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.jacky select {
+  width: 100%;
+  max-width: 100% !important;
+}
+
+.font-map .now input {
+  width: 100%;
+  background-color: #e7e9eb;
+  border: 1px solid #e7e9eb;
+}
+
+.font-map .now input:focus {
+  box-shadow: none !important;
+}
+
+.err_red {
+  font-size: 14px;
+}
+
+.officer_profile {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.officer_profile img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  cursor: pointer;
+  height: 100%;
+}
+
+.open_ion {
+  font-size: 80px;
+  color: #09110e;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.name_status {
+  text-align: left !important;
+  color: #000 !important;
+  margin-bottom: 0px !important;
+  color: #767b7a !important;
+  width: 40% !important;
+  font-size: 15px;
+  font-weight: 400 !important;
+}
+
+.info {
+  width: 60% !important;
+}
+
+.font-map .now1 input {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #e7e9eb;
+  border-radius: 34px;
+  padding: 8px 20px;
+  font-size: 14px;
+}
+
+/* Added by Aditi */
+
+.sideborder {
+  /* border-right: 1px dotted; */
+  border-right: 1px dashed #00000033;
+}
+
+.headtit {
+  display: inline;
+  width: 100%;
+}
+
+.forfolder {
+  box-sizing: border-box;
+  position: absolute;
+  width: 17% !important;
+  height: 120px;
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+  border-radius: 19px;
+}
+
+/* Added by Aditi */
+
+.pos textarea {
+  resize: none;
+}
+
+/* Added by Aditi */
+
+.forfile {
+  position: relative;
+  /* z-index: -999; */
+}
+
+.forfile img {
+  width: 20px;
+  height: 20px;
+  padding-top: 32%;
+}
+
+.folderpostion {
+  margin-top: 35%;
+  margin-left: 40%;
+}
+
+.pos {
+  position: relative;
+}
+
+textarea {
+  border-style: none;
+  border-color: Transparent;
+  overflow: auto;
+}
+
+.juris_form .wdth {
+  width: 50% !important;
+}
+
+.post_btn {
+  position: absolute;
+  right: 22px;
+  bottom: 21px;
+}
+
+.forfolder1 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 17% !important;
+  height: 120px;
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+  border-radius: 19px;
+}
+
+.Images-container {
+  /* width: 100%; */
+  border: 1px solid #000;
+  height: 120px;
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+  border-radius: 19px;
+  margin: 25px 10px;
+}
+
+.Images-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: initial;
+  border-radius: 16px;
+}
+
+.main-div {
+  display: -ms-flexbox;
+  /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  /* }
+    display:  ruby; */
+}
+
+.new_forfolder {
+  box-sizing: border-box;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+  border-radius: 19px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.new_forfolder img {
+  position: absolute;
+  top: 35px;
+  top: 43px;
+  left: 50px;
+  right: 50px;
+  height: 30px;
+  width: 30px;
+}
+
+.Images-container video {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.queue_assign thead td {
+  color: #626262 !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+.new_offse .modal-dialog {
+  max-width: unset !important;
+}
+
+.min_img_opwn {
+  width: 100%;
+  max-width: 35% !important;
+}
