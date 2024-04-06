@@ -33,9 +33,10 @@ export const Login = () => {
       dispatch(login(data))
         .unwrap()
         .then((responce) => {
-          if (responce) {
+          if (responce.success) {
             console.log("Login successfull", responce);
             toast.success("Login successful");
+            navigation
           }
         });
     },

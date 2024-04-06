@@ -18,9 +18,7 @@ export default function ForgotPassword() {
               </p>
 
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label className="text_white mb-3">
-                password
-                </Form.Label>
+                <Form.Label className="text_white mb-3">Email address</Form.Label>
                 <Form.Control
                   name="email"
                   // value={formik.values?.email}
@@ -30,28 +28,13 @@ export default function ForgotPassword() {
                 />
               </Form.Group>
 
-              <Form.Group className="mb-4" controlId="formBasicPassword">
-                <div className="d-flex align-items-center justify-content-between mb-2">
-                  <Form.Label className="text_white">Password</Form.Label>
-                  <div className="text_white"> Forget Password</div>
-                </div>
-                <div className="icon_input_wrapper">
-                  <Form.Control
-                    name="password"
-                    // value={formik.values?.password}
-                    // onChange={formik.handleChange}
-                    type="password"
-                    placeholder="Enter password"
-                  />
-                </div>
-              </Form.Group>
               <Button
                 variant="primary"
                 type="submit"
                 className="comman_btn w-100"
                 // onSubmit={handleSubmit}
               >
-                Login
+                Reset Password
               </Button>
             </div>
           </div>
