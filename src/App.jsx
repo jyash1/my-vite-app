@@ -2,12 +2,12 @@ import {} from "react";
 import "./index.css";
 
 import "./App.css";
-import { Router } from "./routes/Router";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
   return (
     <>
-      <Router />
+      <AppRoutes />
     </>
   );
 }

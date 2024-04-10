@@ -9,6 +9,7 @@ import { useFormik } from "formik";
 import { emailRegex } from "../commmon/constant";
 import { toast } from "react-toastify";
 import { login } from "../../redux/store/slice/auth/auth.slice";
+import Logo from "../commmon/Logo";
 
 export const Login = () => {
   const dispatch = useDispatch();
@@ -57,8 +58,9 @@ export const Login = () => {
           className="form_wrapper h-100 d-flex align-items-center"
           onSubmit={formik.handleSubmit}
         >
-          <div className="row flex-grow-1  z-1">
+          <div className="row flex-grow-1 z-1">
             <div className="col-md-9 col-lg-8 col-xl-5">
+            <Logo className="mb-5"/>
               <h1 className="mb-3 text_white">Sign in to manage</h1>
               <p className="subtitle1 text_white mb-5">
                 Enter your details below

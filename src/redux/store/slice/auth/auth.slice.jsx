@@ -16,6 +16,26 @@ export const login = createAsyncThunk(
     }
   }
 );
+export const forgotPassword = createAsyncThunk(
+  "forgot/password",
+  async (params, { rejectWithValue }) => {
+    try {
+      return await instance.post(API_END_POINT.FORGOT_PASSWORD, params);
+    } catch (err) {
+      return rejectWithValue;
+    }
+  }
+);
+export const changePassword = createAsyncThunk(
+  "change/password",
+  async (params, { rejectWithValue }) => {
+    try {
+      return await instance.post(API_END_POINT.CHANGE_PASSWORD, params);
+    } catch (err) {
+      return rejectWithValue;
+    }
+  }
+);
 
 const authSlice = createSlice({
   name: "auth",
